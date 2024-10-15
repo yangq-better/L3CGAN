@@ -11,8 +11,10 @@
 
 # 运行
 （1）从提供的百度云中分别下载Dataset_test.zip和Dataset_train.zip压缩包文件，解压缩后放置在data文件夹内，其中数据集的下载地址如下：
-Dataset_test.zip: https://pan.baidu.com/s/1cgflwJP7V82Fwb8QduVDdw?pwd=aysp
-Dataset_train.zip: https://pan.baidu.com/s/1J8SoSZSvw6ntNSNqpT4YyQ?pwd=iyxc
+
+- Dataset_test.zip: https://pan.baidu.com/s/1cgflwJP7V82Fwb8QduVDdw?pwd=aysp
+
+- Dataset_train.zip: https://pan.baidu.com/s/1J8SoSZSvw6ntNSNqpT4YyQ?pwd=iyxc
 
 （2）参考requirements.txt文件进行库安装；
 
