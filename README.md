@@ -10,7 +10,9 @@
 ![11](https://github.com/user-attachments/assets/ec2d1289-84fb-4026-bca2-0832ca115373)
 
 # 运行
-（1）从提供的百度云中分别下载Dataset_test.zip（Link:https://pan.baidu.com/s/1cgflwJP7V82Fwb8QduVDdw?pwd=aysp Code: aysp）和Dataset_train.zip（Link: https://pan.baidu.com/s/1J8SoSZSvw6ntNSNqpT4YyQ?pwd=iyxc Code: iyxc）压缩包文件，解压缩后放置在data文件夹内;
+（1）从提供的百度云中分别下载Dataset_test.zip和Dataset_train.zip压缩包文件，解压缩后放置在data文件夹内，其中数据集的下载地址如下：
+Dataset_test.zip: https://pan.baidu.com/s/1cgflwJP7V82Fwb8QduVDdw?pwd=aysp
+Dataset_train.zip: https://pan.baidu.com/s/1J8SoSZSvw6ntNSNqpT4YyQ?pwd=iyxc
 
 （2）参考requirements.txt文件进行库安装；
 
