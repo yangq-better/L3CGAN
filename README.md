@@ -11,7 +11,9 @@
 
 # 运行
 （1）下载本项目后，对data文件夹中的Dataset_test.zip和Dataset_train.zip压缩包文件进行解压缩，放置在原data文件夹内；
+
 （2）参考requirements.txt文件进行库安装；
+
 （3）本文结果是在CPU为Inter E5-2680，内存为256G、 GPU为GeForce RTX 2080、操作系统为Ubuntu16.04.1的环境下得到的。
 
 # 引用
