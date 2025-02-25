@@ -10,7 +10,10 @@ from keras.models import model_from_json
 import random
 from utils.data_utils import getPaths, read, preprocess, deprocess
 
-os.environ["CUDA_VISIBLE_DEVICES"]="3"
+os.environ["CUDA_VISIBLE_DEVICES"]="-1" #禁用GPU
+import tensorflow as tf
+tf.config,set_visible_devices([], 'GPU') #禁用GPU,确保Keras使用CPU
+
 ## for testing arbitrary local data用于测试任意的本地数据
 data_dir = "./data/Dataset_test/LOLDataset//eval15/low/"
 gt_gata_dir = "./data/Dataset_test/LOLDataset//eval15/high/"
