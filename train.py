@@ -5,7 +5,7 @@ from net.ganbefore import FUNIE_GAN
 from utils.data_utils import DataLoader
 from utils.plot_utils import save_val_samples_funieGAN, draw_and_save_loss2
 
-os.environ["CUDA_VISIBLE_DEVICES"]="0"
+# os.environ["CUDA_VISIBLE_DEVICES"]="0"
 os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
 
 data_dir= "./data/Dataset_train/LOLDataset"
@@ -20,7 +20,7 @@ if not exists(checkpoint_dir): os.makedirs(checkpoint_dir)
 ## 训练参数设定
 patch_size = (256, 256)#256
 num_epoch = 4000
-batch_size = 4
+batch_size = 1
 val_interval = 500
 N_val_samples = 3
 save_model_interval = 2000
