@@ -5,8 +5,17 @@ from net.ganbefore import FUNIE_GAN
 from utils.data_utils import DataLoader
 from utils.plot_utils import save_val_samples_funieGAN, draw_and_save_loss2
 
-# os.environ["CUDA_VISIBLE_DEVICES"]="0"
+os.environ["CUDA_VISIBLE_DEVICES"]="-1" # 禁用 GPU
 os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
+
+# 在代码开头添加多线程配置（根据 CPU 核心数调整）
+os.environ["OMP_NUM_THREADS"] = "8"        # OpenMP 线程数
+os.environ["TF_NUM_INTRAOP_THREADS"] = "8" # TensorFlow 内部操作线程数
+os.environ["TF_NUM_INTEROP_THREADS"] = "2" # TensorFlow 并行操作线程数
+
+# 显式设置 TensorFlow 线程策略
+tf.config.threading.set_intra_op_parallelism_threads(8)
+tf.config.threading.set_inter_op_parallelism_threads(2)
 
 data_dir= "./data/Dataset_train/LOLDataset"
 dataset_name = "our485"
@@ -19,7 +28,7 @@ if not exists(checkpoint_dir): os.makedirs(checkpoint_dir)
 
 ## 训练参数设定
 patch_size = (256, 256)#256
-num_epoch = 4000
+num_epoch = 2000
 batch_size = 1
 val_interval = 500
 N_val_samples = 3
